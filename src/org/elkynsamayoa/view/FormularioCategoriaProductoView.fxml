@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.elkynsamayoa.controller.FormularioCategoriaProductoController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/formulario%20categoria%20producto.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfCategoriaId" editable="false" layoutX="20.0" layoutY="97.0" maxHeight="1.0" minHeight="30.0" prefHeight="1.0" prefWidth="180.0" style="-fx-border-color: #130716; -fx-border-width: 5;" />
+      <TextField fx:id="tfNombreCategoria" layoutX="20.0" layoutY="187.0" maxHeight="1.0" minHeight="30.0" prefHeight="1.0" prefWidth="180.0" style="-fx-border-color: #130716; -fx-border-width: 5;" />
+      <TextArea fx:id="taDescripcionCategoria" layoutX="20.0" layoutY="289.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #130716; -fx-border-width: 5;" wrapText="true" />
+      <Button fx:id="btnGuardar" layoutX="264.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="54.0" prefWidth="96.0" style="-fx-border-color: #130716; -fx-background-color: #F5C64E; -fx-border-width: 5; borde: 10;" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="264.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="54.0" prefWidth="96.0" style="-fx-border-color: #130716; -fx-background-color: #F5C64E; -fx-border-width: 5;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
